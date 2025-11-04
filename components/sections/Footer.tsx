@@ -1,6 +1,6 @@
 'use client';
 
-import { Mail, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Instagram, Linkedin, Twitter, Heart, Facebook } from 'lucide-react';
 
 const footerLinks = {
   product: [
@@ -22,37 +22,60 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer id="contato" className="bg-dark text-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Brand */}
+    <footer className="bg-dark text-light py-20 border-t border-border">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
+          {/* Brand Column */}
           <div>
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">
-              Pethour.AI
-            </h3>
-            <p className="text-gray-400 mb-4">
-              Assistente virtual com IA para automatizar seu petshop e aumentar suas vendas.
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                <Heart className="text-white" size={24} />
+              </div>
+              <span className="text-2xl font-bold">Pethour.ai</span>
+            </div>
+            <p className="text-gray-400 mb-8 leading-relaxed text-base">
+              Assistente IA que aumenta vendas de petshops com atendimento inteligente 24/7.
             </p>
-            <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors">
-                <Instagram size={20} />
+            {/* Social Links */}
+            <div className="flex items-center gap-4">
+              <a
+                href="#"
+                className="w-12 h-12 bg-light/10 hover:bg-primary hover:scale-110 rounded-2xl flex items-center justify-center transition-all shadow-lg"
+                aria-label="Instagram"
+              >
+                <Instagram size={22} />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors">
-                <Linkedin size={20} />
+              <a
+                href="#"
+                className="w-12 h-12 bg-light/10 hover:bg-primary hover:scale-110 rounded-2xl flex items-center justify-center transition-all shadow-lg"
+                aria-label="Facebook"
+              >
+                <Facebook size={22} />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors">
-                <Twitter size={20} />
+              <a
+                href="#"
+                className="w-12 h-12 bg-light/10 hover:bg-primary hover:scale-110 rounded-2xl flex items-center justify-center transition-all shadow-lg"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={22} />
+              </a>
+              <a
+                href="#"
+                className="w-12 h-12 bg-light/10 hover:bg-primary hover:scale-110 rounded-2xl flex items-center justify-center transition-all shadow-lg"
+                aria-label="Email"
+              >
+                <Mail size={22} />
               </a>
             </div>
           </div>
 
           {/* Product */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Produto</h4>
-            <ul className="space-y-2">
+            <h4 className="font-bold text-xl mb-8">Produto</h4>
+            <ul className="space-y-4">
               {footerLinks.product.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors">
+                  <a href={link.href} className="text-gray-400 hover:text-primary transition-colors text-base">
                     {link.name}
                   </a>
                 </li>
@@ -62,11 +85,11 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Empresa</h4>
-            <ul className="space-y-2">
+            <h4 className="font-bold text-xl mb-8">Empresa</h4>
+            <ul className="space-y-4">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors">
+                  <a href={link.href} className="text-gray-400 hover:text-primary transition-colors text-base">
                     {link.name}
                   </a>
                 </li>
@@ -76,11 +99,11 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Legal</h4>
-            <ul className="space-y-2">
+            <h4 className="font-bold text-xl mb-8">Legal</h4>
+            <ul className="space-y-4">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors">
+                  <a href={link.href} className="text-gray-400 hover:text-primary transition-colors text-base">
                     {link.name}
                   </a>
                 </li>
@@ -90,12 +113,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">
+        <div className="pt-10 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-6">
+          <p className="text-gray-400 text-base">
             © 2025 Pethour.AI. Todos os direitos reservados.
           </p>
-          <a href="mailto:contato@pethour.ai" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
-            <Mail size={16} />
+          <a href="mailto:contato@pethour.ai" className="flex items-center gap-3 text-gray-400 hover:text-primary transition-colors text-base">
+            <Mail size={18} />
             contato@pethour.ai
           </a>
         </div>

@@ -1,0 +1,345 @@
+nohup: ignorando entrada
+
+> pethour-landing@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.0.2
+   - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 10.1s (1217 modules)
+ GET / 200 in 10742ms
+ ✓ Compiled in 869ms (603 modules)
+ GET / 200 in 127ms
+ GET / 200 in 109ms
+ GET / 200 in 70ms
+ GET / 200 in 76ms
+ GET / 200 in 57ms
+ GET / 200 in 48ms
+ ✓ Compiled in 2.6s (1204 modules)
+ ⨯ app/layout.tsx (29:24) @ inter
+ ⨯ ReferenceError: inter is not defined
+    at RootLayout (./app/layout.tsx:33:24)
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at stringify (<anonymous>)
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+digest: "3803118210"
+  27 |   return (
+  28 |     <html lang="pt-BR">
+> 29 |       <body className={inter.className}>{children}</body>
+     |                        ^
+  30 |     </html>
+  31 |   );
+  32 | }
+ GET / 200 in 184ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 416ms (1208 modules)
+ ⨯ app/layout.tsx (29:24) @ inter
+ ⨯ ReferenceError: inter is not defined
+    at RootLayout (./app/layout.tsx:33:24)
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at stringify (<anonymous>)
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+digest: "3803118210"
+  27 |   return (
+  28 |     <html lang="pt-BR">
+> 29 |       <body className={inter.className}>{children}</body>
+     |                        ^
+  30 |     </html>
+  31 |   );
+  32 | }
+ GET / 500 in 443ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 515ms (1208 modules)
+ GET / 200 in 768ms
+ ✓ Compiled in 746ms (1208 modules)
+ GET / 200 in 121ms
+ ✓ Compiled in 752ms (1208 modules)
+ GET / 200 in 59ms
+ ✓ Compiled in 736ms (1208 modules)
+ GET / 200 in 69ms
+ ✓ Compiled in 633ms (603 modules)
+ GET / 200 in 50ms
+ ✓ Compiled in 641ms (603 modules)
+ GET / 200 in 21ms
+ ✓ Compiled in 1573ms (1208 modules)
+ GET / 200 in 57ms
+ ✓ Compiled in 675ms (1208 modules)
+ GET / 200 in 132ms
+ ✓ Compiled in 1607ms (1210 modules)
+ GET / 200 in 101ms
+ ✓ Compiled in 888ms (1210 modules)
+ GET / 200 in 62ms
+ ✓ Compiled in 479ms (1210 modules)
+ GET / 200 in 68ms
+ ✓ Compiled in 726ms (1210 modules)
+ GET / 200 in 64ms
+ ✓ Compiled in 407ms (1210 modules)
+ GET / 200 in 150ms
+ ✓ Compiled in 528ms (1210 modules)
+ GET / 200 in 52ms
+ ✓ Compiled in 596ms (1210 modules)
+ GET / 200 in 69ms
+ ✓ Compiled in 432ms (1210 modules)
+ GET / 200 in 231ms
+ ✓ Compiled in 413ms (1210 modules)
+ GET / 200 in 86ms
+ ✓ Compiled in 395ms (1210 modules)
+ GET / 200 in 63ms
+ ✓ Compiled in 815ms (1210 modules)
+ GET / 200 in 155ms
+ ✓ Compiled in 834ms (1210 modules)
+ GET / 200 in 123ms
+ ✓ Compiled in 439ms (1210 modules)
+ GET / 200 in 56ms
+ ✓ Compiled in 597ms (1210 modules)
+ GET / 200 in 53ms
+ ⨯ ./components/sections/WaitlistCTA.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/WaitlistCTA.tsx[0m:44:1]
+ [2m41[0m |   };
+ [2m42[0m | 
+ [2m43[0m |   return (
+ [2m44[0m |     return (
+    : [35;1m    ^^^^^^[0m
+ [2m45[0m |     <section className="py-24 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 relative overflow-hidden">
+ [2m46[0m |       {/* Background Decorative Elements */}
+ [2m47[0m |       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/WaitlistCTA.tsx
+./app/page.tsx
+ ○ Compiling /_error ...
+ ⨯ ./components/sections/WaitlistCTA.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/WaitlistCTA.tsx[0m:44:1]
+ [2m41[0m |   };
+ [2m42[0m | 
+ [2m43[0m |   return (
+ [2m44[0m |     return (
+    : [35;1m    ^^^^^^[0m
+ [2m45[0m |     <section className="py-24 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 relative overflow-hidden">
+ [2m46[0m |       {/* Background Decorative Elements */}
+ [2m47[0m |       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/WaitlistCTA.tsx
+./app/page.tsx
+ GET / 500 in 6445ms
+ GET / 500 in 29ms
+ GET / 500 in 30ms
+ GET / 500 in 63ms
+ GET / 500 in 96ms
+ ⨯ ./components/sections/WaitlistCTA.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/WaitlistCTA.tsx[0m:44:1]
+ [2m41[0m |   };
+ [2m42[0m | 
+ [2m43[0m |   return (
+ [2m44[0m |     return (
+    : [35;1m    ^^^^^^[0m
+ [2m45[0m |     <section className="py-24 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 relative overflow-hidden">
+ [2m46[0m |       {/* Background Decorative Elements */}
+ [2m47[0m |       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/WaitlistCTA.tsx
+./app/page.tsx
+ GET / 500 in 16ms
+ ⨯ ./components/sections/WaitlistCTA.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/WaitlistCTA.tsx[0m:44:1]
+ [2m41[0m |   };
+ [2m42[0m | 
+ [2m43[0m |   return (
+ [2m44[0m |     return (
+    : [35;1m    ^^^^^^[0m
+ [2m45[0m |     <section className="py-24 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 relative overflow-hidden">
+ [2m46[0m |       {/* Background Decorative Elements */}
+ [2m47[0m |       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/WaitlistCTA.tsx
+./app/page.tsx
+ GET / 500 in 17ms
+ ⨯ ./components/sections/WaitlistCTA.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/WaitlistCTA.tsx[0m:44:1]
+ [2m41[0m |   };
+ [2m42[0m | 
+ [2m43[0m |   return (
+ [2m44[0m |     return (
+    : [35;1m    ^^^^^^[0m
+ [2m45[0m |     <section className="py-24 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 relative overflow-hidden">
+ [2m46[0m |       {/* Background Decorative Elements */}
+ [2m47[0m |       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/WaitlistCTA.tsx
+./app/page.tsx
+ GET / 500 in 14ms
+ ⨯ ./components/sections/WaitlistCTA.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/WaitlistCTA.tsx[0m:44:1]
+ [2m41[0m |   };
+ [2m42[0m | 
+ [2m43[0m |   return (
+ [2m44[0m |     return (
+    : [35;1m    ^^^^^^[0m
+ [2m45[0m |     <section className="py-24 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 relative overflow-hidden">
+ [2m46[0m |       {/* Background Decorative Elements */}
+ [2m47[0m |       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/WaitlistCTA.tsx
+./app/page.tsx
+ GET / 500 in 10ms
+ ⨯ ./components/sections/WaitlistCTA.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/WaitlistCTA.tsx[0m:44:1]
+ [2m41[0m |   };
+ [2m42[0m | 
+ [2m43[0m |   return (
+ [2m44[0m |     return (
+    : [35;1m    ^^^^^^[0m
+ [2m45[0m |     <section className="py-24 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 relative overflow-hidden">
+ [2m46[0m |       {/* Background Decorative Elements */}
+ [2m47[0m |       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/WaitlistCTA.tsx
+./app/page.tsx
+ ⨯ ./components/sections/WaitlistCTA.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/WaitlistCTA.tsx[0m:44:1]
+ [2m41[0m |   };
+ [2m42[0m | 
+ [2m43[0m |   return (
+ [2m44[0m |     return (
+    : [35;1m    ^^^^^^[0m
+ [2m45[0m |     <section className="py-24 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 relative overflow-hidden">
+ [2m46[0m |       {/* Background Decorative Elements */}
+ [2m47[0m |       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/WaitlistCTA.tsx
+./app/page.tsx
+ ⨯ ./components/sections/Footer.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/Footer.tsx[0m:25:1]
+ [2m22[0m | 
+ [2m23[0m | export default function Footer() {
+ [2m24[0m |   return (
+ [2m25[0m |     export default function Footer() {
+    : [35;1m    ^^^^^^[0m
+ [2m26[0m |   return (
+ [2m27[0m |     <footer className="bg-dark text-light py-20 border-t border-border">
+ [2m28[0m |       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/Footer.tsx
+./app/page.tsx
+ ⨯ ./components/sections/Footer.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/Footer.tsx[0m:25:1]
+ [2m22[0m | 
+ [2m23[0m | export default function Footer() {
+ [2m24[0m |   return (
+ [2m25[0m |     export default function Footer() {
+    : [35;1m    ^^^^^^[0m
+ [2m26[0m |   return (
+ [2m27[0m |     <footer className="bg-dark text-light py-20 border-t border-border">
+ [2m28[0m |       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/Footer.tsx
+./app/page.tsx
+ GET / 500 in 25ms
+ ⨯ ./components/sections/WaitlistCTA.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/WaitlistCTA.tsx[0m:44:1]
+ [2m41[0m |   };
+ [2m42[0m | 
+ [2m43[0m |   return (
+ [2m44[0m |     return (
+    : [35;1m    ^^^^^^[0m
+ [2m45[0m |     <section className="py-24 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 relative overflow-hidden">
+ [2m46[0m |       {/* Background Decorative Elements */}
+ [2m47[0m |       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/WaitlistCTA.tsx
+./app/page.tsx
+ GET / 500 in 22ms
+ ⨯ ./components/sections/WaitlistCTA.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4m/home/renato/VS Code/Pethour/components/sections/WaitlistCTA.tsx[0m:44:1]
+ [2m41[0m |   };
+ [2m42[0m | 
+ [2m43[0m |   return (
+ [2m44[0m |     return (
+    : [35;1m    ^^^^^^[0m
+ [2m45[0m |     <section className="py-24 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 relative overflow-hidden">
+ [2m46[0m |       {/* Background Decorative Elements */}
+ [2m47[0m |       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/sections/WaitlistCTA.tsx
+./app/page.tsx
+ GET / 500 in 19ms
+ ✓ Compiled /_not-found in 1442ms (1441 modules)
+ GET / 200 in 149ms
+ ✓ Compiled in 794ms (1455 modules)
+ GET / 200 in 185ms

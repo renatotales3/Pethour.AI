@@ -23,29 +23,28 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+        isScrolled ? 'bg-white/98 backdrop-blur-md shadow-sm' : 'bg-white'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Pethour.AI
-              </span>
+            <a href="/" className="flex items-center gap-2">
+              <span className="text-2xl font-bold text-primary">Pethour</span>
+              <span className="text-xs font-semibold text-white bg-secondary px-2 py-1 rounded-full">AI</span>
             </a>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#recursos" className="text-dark hover:text-primary transition-colors">
+          <div className="hidden md:flex items-center space-x-10">
+            <a href="#recursos" className="text-dark hover:text-primary transition-colors font-medium">
               Recursos
             </a>
-            <a href="#como-funciona" className="text-dark hover:text-primary transition-colors">
+            <a href="#como-funciona" className="text-dark hover:text-primary transition-colors font-medium">
               Como Funciona
             </a>
-            <a href="#contato" className="text-dark hover:text-primary transition-colors">
+            <a href="#contato" className="text-dark hover:text-primary transition-colors font-medium">
               Contato
             </a>
           </div>
@@ -54,7 +53,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <button
               onClick={scrollToWaitlist}
-              className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-semibold transition-all hover:shadow-lg hover:scale-105"
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-3.5 rounded-full font-semibold transition-all hover:shadow-lg hover:scale-105 text-[15px]"
             >
               Entrar na Waitlist
             </button>

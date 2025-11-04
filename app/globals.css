@@ -6,18 +6,24 @@
   --primary: #FF9066;
   --secondary: #A78BFA;
   --accent: #34C759;
-  --dark: #1F2937;
-  --light: #F9FAFB;
-  --border: #E5E7EB;
+  --dark: #2D3748;
+  --light: #FEFEFE;
+  --border: #F0E9F5;
 }
 
 body {
   color: var(--dark);
   background: var(--light);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
