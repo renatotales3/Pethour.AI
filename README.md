@@ -25,6 +25,7 @@ Landing page premium para Pethour.AI, um assistente virtual com IA que automatiz
 - **Animações:** Framer Motion
 - **Ícones:** Lucide React
 - **Formulários:** React Hook Form + Zod
+- **Design Integration:** Figma MCP (Model Context Protocol)
 
 ## 📋 Pré-requisitos
 
@@ -202,12 +203,22 @@ DATABASE_URL=your_database_url
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
 
+## 🎨 Integração com Figma
+
+Este projeto usa **Figma MCP** para facilitar a conversão de designs em código. Veja [FIGMA_MCP_SETUP.md](FIGMA_MCP_SETUP.md) para instruções completas de configuração.
+
+```bash
+# MCP Figma já instalado
+npm list figma-mcp
+```
+
 ## 📝 TODO List
 
 - [x] Scaffold projeto Next.js 15
 - [x] Criar componentes (Navbar, Hero, Features, Footer)
 - [x] Implementar form de waitlist
 - [x] Adicionar animações com Framer Motion
+- [x] Configurar Figma MCP
 - [ ] Integrar Resend para emails
 - [ ] Adicionar Google Analytics
 - [ ] Testes com Playwright
